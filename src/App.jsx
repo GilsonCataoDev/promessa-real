@@ -190,7 +190,7 @@ export default function App() {
       <header className="app-header">
         <div className="header-container">
           <div className="brand-group">
-            <span className="brand-kicker">Revisão Regulatória Inteligente</span>
+            <span className="brand-kicker">Revisor de promessas em saúde e beleza</span>
             <h1 className="brand-title">Promessa Real</h1>
           </div>
           <p className="brand-subtitle">
@@ -261,7 +261,7 @@ export default function App() {
             </form>
 
             <div className="examples-card">
-              <span className="examples-heading">Experimente com casos reais fictícios:</span>
+              <span className="examples-heading">Exemplos prontos (textos fictícios)</span>
               <div className="examples-button-group">
                 {EXAMPLES.map((ex) => (
                   <button
@@ -305,11 +305,10 @@ export default function App() {
 
             {!isLoading && !result && !error && (
               <div className="empty-state">
-                <div className="empty-badge">Pronto para auditar</div>
+                <div className="empty-badge">Aguardando texto</div>
                 <h3 className="empty-title">Nenhuma análise realizada ainda</h3>
                 <p className="empty-text">
-                  Digite ou cole seu texto ao lado, ou selecione um dos exemplos com um clique para
-                  verificar se seu anúncio respeita as regras de saúde e publicidade.
+                  Cole um texto no campo ou escolha um exemplo para ver os trechos marcados e as sugestões.
                 </p>
               </div>
             )}
